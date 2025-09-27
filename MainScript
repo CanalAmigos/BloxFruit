@@ -11,7 +11,7 @@ connect = game:GetService('CoreGui'):WaitForChild('RobloxPromptGui'):WaitForChil
 	end
 end)
 if typeof(queue_on_teleport) == 'function' then
-	queue_on_teleport(`loadstring(game:HttpGet('https://raw.githubusercontent.com/CanalAmigos/BloxFruit/refs/heads/main/MainScript?token=GHSAT0AAAAAADICTHEQSEVNWWUVDFKIXFK22GX5HPQ'))()`)
+	queue_on_teleport(`loadstring(game:HttpGet('https://raw.githubusercontent.com/CanalAmigos/BloxFruit/refs/heads/main/MainScript'))()`)
 	print('Succesfully added queue!!!')
 end
 loadstring(game:HttpGet('https://raw.githubusercontent.com/h6hbii/AnDepZaiHub/refs/heads/main/AndepzaiHub.lua'))()

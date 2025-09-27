@@ -1,0 +1,12 @@
+local rs = game:GetService('RunService')
+local ts = game:GetService('TeleportService')
+local connect = nil
+connect = game:GetService('CoreGui'):WaitForChild('RobloxPromptGui'):WaitForChild('promptOverlay').ChildAdded:Connect(function(child)
+	if child.Name == 'ErrorPrompt' and child:FindFirstChild('MessageArea') and child.MessageArea:FindFirstChild('ErrorFrame') then
+		rs.Heartbeat:Connect(function()
+			ts:Teleport(1456080999,game.Players.LocalPlayer)
+		end)
+		connect:Disconnect()
+	end
+end)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/h6hbii/AnDepZaiHub/refs/heads/main/AndepzaiHub.lua"))()

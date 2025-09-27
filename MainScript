@@ -1,3 +1,4 @@
+local script = [[
 local rs = game:GetService('RunService')
 local ts = game:GetService('TeleportService')
 local connect = nil
@@ -10,3 +11,9 @@ connect = game:GetService('CoreGui'):WaitForChild('RobloxPromptGui'):WaitForChil
 	end
 end)
 loadstring(game:HttpGet("https://raw.githubusercontent.com/h6hbii/AnDepZaiHub/refs/heads/main/AndepzaiHub.lua"))()
+]]
+if typeof(queue_on_teleport) == 'function' then
+	queue_on_teleport(script)
+	print('Succesfully added queue!!!')
+end
+loadstring(script)()

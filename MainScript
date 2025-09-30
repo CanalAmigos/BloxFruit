@@ -10,4 +10,7 @@ connect = game:GetService('CoreGui'):WaitForChild('RobloxPromptGui'):WaitForChil
 		connect:Disconnect()
 	end
 end)
+if queue_on_teleport and typeof(queue_on_teleport) == 'function' then
+	queue_on_teleport(`loadstring(game:HttpGet(''))()`)
+end
 loadstring(game:HttpGet('https://raw.githubusercontent.com/h6hbii/AnDepZaiHub/refs/heads/main/AndepzaiHub.lua'))()
